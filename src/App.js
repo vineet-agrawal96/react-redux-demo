@@ -9,7 +9,7 @@ export default function App() {
     <div className="App">
       <h1>{test.test}</h1>
 
-      <button onClick={() => dispatch(testAction("Title"))}>CLick on me</button>
+      <button onClick={() => dispatch(testAction("Title test"))}>CLick on me</button>
     </div>
   );
 }
