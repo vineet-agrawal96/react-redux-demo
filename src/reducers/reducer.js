@@ -1,23 +1,28 @@
 import { combineReducers } from "redux";
-import { TEST_ACTION } from "./actionTypes";
+import { ADD_USER } from "./actionTypes";
 
 const intialState = {
-  test: ""
+  users: [],
+  count : 0,
+  selectedUser:0
 };
 
 const reducers = (state = intialState, action) => {
+  let { count, users } = state 
   switch (action.type) {
-    case TEST_ACTION:
-      state = { ...state, test: action.data };
-      return state;
+    case ADD_USER:
+      console.log("ADD_USER====>", action)
+      
+      users = [...users, { ...action.data , id:count+1}]
+      return {...state, users, count : count+1 };
 
     default:
       return state;
   }
 };
 
-const rootReducers = combineReducers({
-  reducers
-});
+// const rootReducers = combineReducers({
+//   reducers
+// });
 
-export default rootReducers;
+export default reducers;

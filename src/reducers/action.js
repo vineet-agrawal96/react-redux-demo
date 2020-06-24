@@ -1,8 +1,9 @@
-import { TEST_ACTION } from "./actionTypes";
+import { ADD_USER } from "./actionTypes";
 
-export const testAction = (data = {}) => {
+export const addUser = (data = {}) => {
+  console.log("data", data)
   return {
-    type: TEST_ACTION,
+    type: ADD_USER,
     data: data
   };
 };
