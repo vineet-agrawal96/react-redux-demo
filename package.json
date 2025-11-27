@@ -14,7 +14,7 @@
     "react-picture-annotation": "git+https://github.com/vineet-agrawal96/react-picture-annotation.git",
     "react-redux": "7.2.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "reactstrap": "^8.5.0",
     "redux": "4.0.5",
     "redux-persist": "^6.0.0",
